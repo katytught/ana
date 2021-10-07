@@ -33,7 +33,7 @@ public class getsym {
         for(int i=0;i<s.length();i++){
             StringBuilder token= new StringBuilder();
             String type="";
-            if(Character.isSpaceChar(s.charAt(i))){
+            if(Character.isSpaceChar(s.charAt(i))||s.charAt(i)=='\t'){
 
             }
             else if(Character.isLetter(s.charAt(i))||s.charAt(i)=='_'){
@@ -122,7 +122,7 @@ public class getsym {
                 System.out.println(token.toString());
             }
             else {
-                token.append(s.charAt(i));
+                token.append("Err");
                 System.out.println(token.toString());
                 System.exit(0);
             }
