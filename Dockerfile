@@ -1,5 +1,4 @@
 FROM openjdk:11
-COPY ./* /app/
 WORKDIR /app/
+COPY getsym.java ./
 RUN javac getsym.java
-WORKDIR /app/output
