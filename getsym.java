@@ -122,7 +122,7 @@ public class getsym {
                 System.out.println(token.toString());
             }
             else {
-                token.append("Err");
+                token.append(s.charAt(i));
                 System.out.println(token.toString());
                 System.exit(0);
             }
